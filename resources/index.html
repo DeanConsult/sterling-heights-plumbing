@@ -9,6 +9,9 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --blue: #1767d1; --dark: #1a2436; --white: #ffffff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; }
+    :root { --accent: var(--blue); }
+    :root { --accent: var(--blue); }
+    :root { --accent: var(--blue); }
     body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
     a { color: inherit; text-decoration: none; }
     nav { background: var(--dark); padding: 0 24px; }
@@ -33,6 +36,18 @@
     footer { background: var(--dark); color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 0.85rem; }
     footer a { color: #5ba3f5; }
     footer strong { color: var(--white); }
+      .ds{background:var(--gray);padding:60px 24px;margin-top:0}
+    .ds-inner{max-width:1100px;margin:0 auto}
+    .ds-label{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+    .ds-title{font-size:clamp(1.3rem,3vw,1.9rem);font-weight:800;color:var(--dark);margin-bottom:28px}
+    .cb{margin-bottom:32px}.cb:last-child{margin-bottom:0}
+    .ct{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--dark);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--blue)}
+    .cr{display:flex;justify-content:space-between;align-items:center;background:var(--white);border-radius:6px;padding:10px 14px;margin-bottom:5px;gap:12px}
+    .ci{display:flex;flex-direction:column;gap:2px}
+    .ci strong{font-size:.88rem;color:var(--dark);font-weight:700}
+    .ci span{font-size:.76rem;color:var(--muted)}
+    .cb2{flex-shrink:0;background:var(--blue);color:var(--white);padding:5px 13px;border-radius:5px;font-size:.74rem;font-weight:700;white-space:nowrap;text-decoration:none}
+    @media(max-width:480px){.cr{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
 <body>
@@ -76,128 +91,120 @@
       <p>Only toilet paper should be flushed. &ldquo;Flushable&rdquo; wipes, paper towels, cotton balls, and hygiene products do not break down and are a leading cause of sewer line blockages. When in doubt, throw it in the trash.</p>
     </div>
   </div>
-
-  <div class="dir-section">
-    <h2 class="section-title">Plumbing Companies in Metro Detroit</h2>
-    <div class="dir-grid">
-      <div class="dir-card">
-        <h4>Roto-Rooter Plumbing</h4>
-        <p>Metro Detroit plumbing and drain services</p>
-        <a href="https://www.rotorooter.com" target="_blank" rel="nofollow">rotorooter.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Hoover Plumbing</h4>
-        <p>Residential plumbing in Metro Detroit</p>
-        <a href="https://www.hooverplumbing.com" target="_blank" rel="nofollow">hooverplumbing.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>AAA Plumbing</h4>
-        <p>Plumbing service in Southeast Michigan</p>
-        <a href="https://www.aaaserviceplumbing.com" target="_blank" rel="nofollow">aaaserviceplumbing.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Max Mechanical</h4>
-        <p>Plumbing, heating and cooling services</p>
-        <a href="https://www.maxmechanical.com" target="_blank" rel="nofollow">maxmechanical.com</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="dir-section">
-    <h2 class="section-title">Electrical Contractors in Metro Detroit</h2>
-    <div class="dir-grid">
-      <div class="dir-card">
-        <h4>Electrician Guys Westland</h4>
-        <p>Residential and commercial electrical in Westland MI</p>
-        <a href="https://www.electricianproswestland.com" target="_blank" rel="nofollow">electricianproswestland.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Evansville Electrician Pros</h4>
-        <p>Licensed electricians serving Evansville IN</p>
-        <a href="https://www.evansvilleelectricianpros.com" target="_blank" rel="nofollow">evansvilleelectricianpros.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Mister Sparky</h4>
-        <p>Residential electrical services in Metro Detroit</p>
-        <a href="https://www.mistersparky.com" target="_blank" rel="nofollow">mistersparky.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Kotz Heating, Cooling &amp; Plumbing</h4>
-        <p>Full-service home services in Metro Detroit</p>
-        <a href="https://www.kotz.com" target="_blank" rel="nofollow">kotz.com</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="dir-section">
-    <h2 class="section-title">Carpet &amp; Flooring Companies in Metro Detroit</h2>
-    <div class="dir-grid">
-      <div class="dir-card">
-        <h4>Shelby Township Carpet and Floors</h4>
-        <p>Shop-at-home carpet and flooring in Shelby Twp MI</p>
-        <a href="https://www.shelbytwpcarpetandfloors.com" target="_blank" rel="nofollow">shelbytwpcarpetandfloors.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Macomb Flooring Mart</h4>
-        <p>Carpet and flooring in Macomb County MI</p>
-        <a href="https://www.macombflooringmart.com" target="_blank" rel="nofollow">macombflooringmart.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Luna Flooring</h4>
-        <p>Carpet and flooring installation in Metro Detroit</p>
-        <a href="https://www.lunaflooring.com" target="_blank" rel="nofollow">lunaflooring.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Empire Today</h4>
-        <p>Carpet, hardwood, and flooring installation</p>
-        <a href="https://www.empiretoday.com" target="_blank" rel="nofollow">empiretoday.com</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="dir-section">
-    <h2 class="section-title">HVAC Companies in Metro Detroit</h2>
-    <div class="dir-grid">
-      <div class="dir-card">
-        <h4>Carrier &mdash; Metro Detroit Dealers</h4>
-        <p>Heating and cooling systems</p>
-        <a href="https://www.carrier.com" target="_blank" rel="nofollow">carrier.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Service Experts Heating &amp; Air</h4>
-        <p>HVAC installation and repair in Metro Detroit</p>
-        <a href="https://www.serviceexperts.com" target="_blank" rel="nofollow">serviceexperts.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>John E. Brewer Heating</h4>
-        <p>Furnace and AC service in Sterling Heights area</p>
-        <a href="https://www.jebrewer.com" target="_blank" rel="nofollow">jebrewer.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Abraham Heating &amp; Cooling</h4>
-        <p>HVAC service in Macomb County</p>
-        <a href="https://www.abrahamheating.com" target="_blank" rel="nofollow">abrahamheating.com</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="dir-section">
-    <h2 class="section-title">Other Home Services in Metro Detroit</h2>
-    <div class="dir-grid">
-      <div class="dir-card">
-        <h4>ServiceMaster Restore</h4>
-        <p>Water and fire damage restoration in Metro Detroit</p>
-        <a href="https://www.servicemaster.com" target="_blank" rel="nofollow">servicemaster.com</a>
-      </div>
-      <div class="dir-card">
-        <h4>Rainbow Restoration</h4>
-        <p>Property restoration services in Southeast Michigan</p>
-        <a href="https://www.rainbowrestoration.com" target="_blank" rel="nofollow">rainbowrestoration.com</a>
-      </div>
-    </div>
-  </div>
-
 </div>
+  <div class="ds">
+    <div class="ds-inner">
+      <div class="ds-label">Service Directory</div>
+      <div class="ds-title">Trusted Local Companies</div>
+    <div class="cb"><div class="ct">HVAC &mdash; Heating &amp; Cooling</div>
+      <div class="cr"><div class="ci"><strong>Canton Furnace &amp; AC</strong><span>Canton, MI</span></div><a href="https://cantonfurnaceandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Clinton Twp Furnace &amp; AC</strong><span>Clinton Twp, MI</span></div><a href="https://clintontwpfurnaceandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Dearborn Furnace &amp; AC</strong><span>Dearborn, MI</span></div><a href="https://dearbornfurnaceandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Farmington Hills Furnace &amp; Air</strong><span>Farmington Hills, MI</span></div><a href="https://farmhlsfurnaceandair.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Livonia Furnace &amp; Air</strong><span>Livonia, MI</span></div><a href="https://livoniafurnaceandair.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Novi Furnace &amp; AC</strong><span>Novi, MI</span></div><a href="https://novifurnaceandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Rochester Hills Furnace &amp; AC</strong><span>Rochester Hills, MI</span></div><a href="https://rhillsfurnaceandairconditioning.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Shelby Twp Furnace &amp; Air</strong><span>Shelby Twp, MI</span></div><a href="https://shelbytwpfurnaceandair.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Sterling Heights Furnace &amp; AC</strong><span>Sterling Heights, MI</span></div><a href="https://sheightsfurnaceandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Troy Furnace &amp; Air Conditioning</strong><span>Troy, MI</span></div><a href="https://troyfurnaceandairconditioning.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Warren Furnace &amp; Air</strong><span>Warren, MI</span></div><a href="https://warrenfurnaceandair.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>WB Heating &amp; AC</strong><span>West Bloomfield, MI</span></div><a href="https://wbheatingandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Westland Furnace &amp; AC</strong><span>Westland, MI</span></div><a href="https://westlandfurnaceandac.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+    </div>
+      <div class="cb"><div class="ct">Electrical</div>
+      <div class="cr"><div class="ci"><strong>Electrician Guys Grand Rapids</strong><span>Grand Rapids, MI</span></div><a href="https://electricianguysgrandrapids.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Ann Arbor</strong><span>Ann Arbor, MI</span></div><a href="https://electricianprosannarbor.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Arlington Heights</strong><span>Arlington Heights, IL</span></div><a href="https://electricianprosarlingtonheights.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Aurora</strong><span>Aurora, IL</span></div><a href="https://electricianprosaurora.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Bolingbrook</strong><span>Bolingbrook, IL</span></div><a href="https://electicianprosbolingbrook.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Canton</strong><span>Canton, MI</span></div><a href="https://electricianproscanton.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Chandler</strong><span>Chandler, AZ</span></div><a href="https://electricianproschandler.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Cicero</strong><span>Cicero, IL</span></div><a href="https://electricianproscicero.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Clinton Twp</strong><span>Clinton Twp, MI</span></div><a href="https://electricianprosclintontwp.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Dearborn</strong><span>Dearborn, MI</span></div><a href="https://electricianprosdearborn.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Detroit</strong><span>Detroit, MI</span></div><a href="https://electricianprosdetroit.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Elgin</strong><span>Elgin, IL</span></div><a href="https://electricianproselgin.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Evanston</strong><span>Evanston, IL</span></div><a href="https://electricianprosevanston.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Farmington Hills</strong><span>Farmington Hills, MI</span></div><a href="https://electricianprosfarmhills.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Flint</strong><span>Flint, MI</span></div><a href="https://electricianprosflint.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Gresham</strong><span>Gresham, OR</span></div><a href="https://greshamelectricianpros.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Lansing</strong><span>Lansing, MI</span></div><a href="https://electricianproslansing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Livonia</strong><span>Livonia, MI</span></div><a href="https://electricianproslivonia.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Macomb</strong><span>Macomb, MI</span></div><a href="https://electricianprosmacomb.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Naperville</strong><span>Naperville, IL</span></div><a href="https://electricianprosnaperville.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Novi</strong><span>Novi, MI</span></div><a href="https://electricianprosnovi.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Palatine</strong><span>Palatine, IL</span></div><a href="https://electricianprospalatine.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Peoria AZ</strong><span>Peoria, AZ</span></div><a href="https://electricianprospeoriaaz.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Pompano Beach</strong><span>Pompano Beach, FL</span></div><a href="https://pompbeachelectricianpros.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Provo</strong><span>Provo, UT</span></div><a href="https://provoelectricianpros.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pro &ndash; Pueblo</strong><span>Pueblo, CO</span></div><a href="https://puebloelectricianpro.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Rochester Hills</strong><span>Rochester Hills, MI</span></div><a href="https://electricianprosrhills.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Schaumburg</strong><span>Schaumburg, IL</span></div><a href="https://electricianprosschaumburg.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Shelby Township</strong><span>Shelby Twp, MI</span></div><a href="https://electricianprosstownship.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Skokie</strong><span>Skokie, IL</span></div><a href="https://electricianprosskokie.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Sterling Heights</strong><span>Sterling Heights, MI</span></div><a href="https://electricianprossterlingheights.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Tempe</strong><span>Tempe, AZ</span></div><a href="https://electricianprostempe.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Troy</strong><span>Troy, MI</span></div><a href="https://electricianprostroy.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Warren</strong><span>Warren, MI</span></div><a href="https://electricianproswarren.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Waterbury</strong><span>Waterbury, CT</span></div><a href="https://waterburyelectricianpros.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; West Bloomfield</strong><span>West Bloomfield, MI</span></div><a href="https://electricianproswestbloomfield.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Electrician Pros &ndash; Westland</strong><span>Westland, MI</span></div><a href="https://electricianproswestland.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Evansville Electrician Pros</strong><span>Evansville, IN</span></div><a href="https://evansvilleelectricianpros.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      </div>
+      <div class="cb"><div class="ct">Plumbing</div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Aurora</strong><span>Aurora, IL</span></div><a href="https://fiveguysplumbingaurora.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Canton</strong><span>Canton, MI</span></div><a href="https://fiveguysplumbingcanton.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Clinton Twp</strong><span>Clinton Twp, MI</span></div><a href="https://fiveguysplumbingclintontwp.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Dearborn</strong><span>Dearborn, MI</span></div><a href="https://fiveguysplumbingdearborn.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Farmington Hills</strong><span>Farmington Hills, MI</span></div><a href="https://fiveguysplumbingfarmingtonhills.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Palatine</strong><span>Palatine, IL</span></div><a href="https://fiveguysplumbingpalatine.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Schaumburg</strong><span>Schaumburg, IL</span></div><a href="https://fiveguysplumbingschaumburg.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Skokie</strong><span>Skokie, IL</span></div><a href="https://fiveguysplumbingskokie.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Troy</strong><span>Troy, MI</span></div><a href="https://fiveguysplumbingtroy.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Warren</strong><span>Warren, MI</span></div><a href="https://fiveguysplumbingwarren.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Five Guys Plumbing &ndash; Westland</strong><span>Westland, MI</span></div><a href="https://fiveguysplumbingwestland.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Livonia Plumbing Co.</strong><span>Livonia, MI</span></div><a href="https://livoniaplumbingco.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Macomb Plumbing Company</strong><span>Macomb, MI</span></div><a href="https://macombplumbingco.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Novi Plumbing</strong><span>Novi, MI</span></div><a href="https://noviplumb.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Rochester Hills Plumbing</strong><span>Rochester Hills, MI</span></div><a href="https://rhillsplumbing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Shelby Twp Plumbing</strong><span>Shelby Twp, MI</span></div><a href="https://shelbytwpplumbing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>West Bloomfield Plumbing</strong><span>West Bloomfield, MI</span></div><a href="https://westbloomplumbing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      </div>
+      <div class="cb"><div class="ct">Carpet &amp; Flooring</div>
+      <div class="cr"><div class="ci"><strong>AA Carpet &amp; Floors</strong><span>Metro Detroit, MI</span></div><a href="https://aacarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Canton Carpet &amp; Floors</strong><span>Canton, MI</span></div><a href="https://cantoncarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Dearborn Carpet &amp; Floors</strong><span>Dearborn, MI</span></div><a href="https://dearborncarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Livonia Carpet &amp; Floors</strong><span>Livonia, MI</span></div><a href="https://livoniacarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Macomb Flooring Mart</strong><span>Macomb, MI</span></div><a href="https://macombflooringmart.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Novi Carpet &amp; Floors</strong><span>Novi, MI</span></div><a href="https://novicarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Shelby Twp Carpet &amp; Floors</strong><span>Shelby Twp, MI</span></div><a href="https://shelbytwpcarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Troy Carpet &amp; Floors</strong><span>Troy, MI</span></div><a href="https://troycarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>WB Carpet &amp; Floors</strong><span>West Bloomfield, MI</span></div><a href="https://wbcarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Westland Carpet &amp; Floors</strong><span>Westland, MI</span></div><a href="https://westlandcarpetandfloors.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      </div>
+    <div class="cb"><div class="ct">Other Home Services</div>
+      <div class="cr"><div class="ci"><strong>Carpet Cleaning &ndash; Farmington Hills</strong><span>Farmington Hills, MI</span></div><a href="https://carpetcleaningfarmhls.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Warren Carpet Cleaning Co.</strong><span>Warren, MI</span></div><a href="https://warrencarpetcleaningco.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Rochester Hills Roofing</strong><span>Rochester Hills, MI</span></div><a href="https://rhillsroofing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Shelby Twp Roofing</strong><span>Shelby Twp, MI</span></div><a href="https://shelbytwproofing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>West Bloomfield Roofing</strong><span>West Bloomfield, MI</span></div><a href="https://westbloomroofing.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Detroit Tree Service</strong><span>Detroit, MI</span></div><a href="https://detroittreeserv.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Gastonia Home Security</strong><span>Gastonia, NC</span></div><a href="https://gastoniahomesecurity.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Westland Mold Inspection</strong><span>Westland, MI</span></div><a href="https://westlandmoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Dearborn Mold Inspection</strong><span>Dearborn, MI</span></div><a href="https://dearbornmoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Livonia Mold Inspection</strong><span>Livonia, MI</span></div><a href="https://livoniamoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Novi Mold Inspection</strong><span>Novi, MI</span></div><a href="https://novimoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Farmington Hills Mold Inspection</strong><span>Farmington Hills, MI</span></div><a href="https://farmhlsmoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>West Bloomfield Mold Inspection</strong><span>West Bloomfield, MI</span></div><a href="https://wbmoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Canton Mold Inspection</strong><span>Canton, MI</span></div><a href="https://cantonmoldinspection.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Metro Detroit Review</strong><span>metrodetroitreview.com</span></div><a href="https://metrodetroitreview.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Plumbing News &amp; More</strong><span>plumbingnewsandmore.com</span></div><a href="https://plumbingnewsandmore.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Sterling Heights Appraisal Service</strong><span>Sterling Heights, MI</span></div><a href="https://shappraisalservice.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+      <div class="cr"><div class="ci"><strong>Canton Realtor &ndash; F. Bartlo</strong><span>Canton, MI</span></div><a href="https://cantonrealtorfbartlo.com" class="cb2" rel="nofollow noopener" target="_blank">Visit</a></div>
+    </div>
+    </div>
+  </div>
+
 
 <footer>
   <p><strong>Sterling Heights Plumbing</strong> &nbsp;|&nbsp; <a href="../">Home</a> &nbsp;&middot;&nbsp; <a href="tel:5864967237">586-496-7237</a></p>
