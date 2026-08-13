@@ -315,14 +315,18 @@
           <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="db1e8c49-c8de-4bc0-aa25-7f8de025bc2d" />
             <input type="hidden" name="subject" value="New Lead &mdash; Sterling Heights Plumbing" />
-            <input type="hidden" name="redirect" value="https://www.sheightsplumbing.com/?sent=1" />
+            <input type="hidden" name="redirect" value="https://www.sheightsplumbing.com/thank-you/" />
             <div class="form-row">
-              <label>Your Name</label>
+              <label>Your Name *</label>
               <input type="text" name="name" placeholder="John Smith" required />
             </div>
             <div class="form-row">
-              <label>Phone Number</label>
+              <label>Phone Number *</label>
               <input type="tel" name="phone" placeholder="(586) 000-0000" required />
+            </div>
+            <div class="form-row">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="you@email.com" />
             </div>
             <div class="form-row">
               <label>Service Needed</label>
@@ -330,11 +334,14 @@
                 <label class="check-item"><input type="checkbox" name="service" value="Drain Cleaning" /> Drain Cleaning</label>
                 <label class="check-item"><input type="checkbox" name="service" value="Pipe Repair / Leak" /> Pipe Repair / Leak</label>
                 <label class="check-item"><input type="checkbox" name="service" value="Water Heater" /> Water Heater</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Other Plumbing" /> Other Plumbing</label>
+                <label class="check-item"><input type="checkbox" name="service" value="Toilet Repair" /> Toilet Repair</label>
+                <label class="check-item"><input type="checkbox" name="service" value="Faucet / Fixture" /> Faucet / Fixture</label>
+                <label class="check-item"><input type="checkbox" name="service" value="Emergency Service" /> Emergency Service</label>
+                <label class="check-item"><input type="checkbox" name="service" value="Other" /> Other</label>
               </div>
             </div>
             <div class="form-row">
-              <label>Message (optional)</label>
+              <label>Comment (optional)</label>
               <textarea name="message" placeholder="Briefly describe the issue..."></textarea>
             </div>
             <button type="submit" class="form-submit">Send My Request &rarr;</button>
@@ -525,13 +532,13 @@
     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="db1e8c49-c8de-4bc0-aa25-7f8de025bc2d" />
       <input type="hidden" name="subject" value="New Lead &mdash; Sterling Heights Plumbing (Contact Form)" />
-      <input type="hidden" name="redirect" value="https://www.sheightsplumbing.com/?sent=1" />
+      <input type="hidden" name="redirect" value="https://www.sheightsplumbing.com/thank-you/" />
       <div class="form-row">
-        <label>Your Name</label>
+        <label>Your Name *</label>
         <input type="text" name="name" placeholder="John Smith" required />
       </div>
       <div class="form-row">
-        <label>Phone Number</label>
+        <label>Phone Number *</label>
         <input type="tel" name="phone" placeholder="(586) 000-0000" required />
       </div>
       <div class="form-row">
@@ -539,8 +546,20 @@
         <input type="email" name="email" placeholder="you@email.com" />
       </div>
       <div class="form-row">
-        <label>How Can We Help?</label>
-        <textarea name="message" placeholder="Describe your plumbing issue or question..." required></textarea>
+        <label>Service Needed</label>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox" name="service" value="Drain Cleaning" /> Drain Cleaning</label>
+          <label class="check-item"><input type="checkbox" name="service" value="Pipe Repair / Leak" /> Pipe Repair / Leak</label>
+          <label class="check-item"><input type="checkbox" name="service" value="Water Heater" /> Water Heater</label>
+          <label class="check-item"><input type="checkbox" name="service" value="Toilet Repair" /> Toilet Repair</label>
+          <label class="check-item"><input type="checkbox" name="service" value="Faucet / Fixture" /> Faucet / Fixture</label>
+          <label class="check-item"><input type="checkbox" name="service" value="Emergency Service" /> Emergency Service</label>
+          <label class="check-item"><input type="checkbox" name="service" value="Other" /> Other</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label>Comment (optional)</label>
+        <textarea name="message" placeholder="Describe your plumbing issue or question..."></textarea>
       </div>
       <button type="submit" class="form-submit">Send Message &rarr;</button>
     </form>
