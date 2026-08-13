@@ -150,6 +150,10 @@
     .form-submit { width: 100%; background: var(--blue); color: var(--white); border: none; padding: 13px; border-radius: var(--radius); font-size: 0.97rem; font-weight: 700; cursor: pointer; transition: background .2s; margin-top: 6px; }
     .form-submit:hover { background: var(--blue-dark); }
     .form-note { font-size: 0.75rem; color: var(--muted); text-align: center; margin-top: 10px; }
+    .hero-form-stars { background: var(--white); padding: 14px 24px 12px; text-align: center; border-bottom: 1px solid #f0f0f0; }
+    .hero-form-stars .stars-row { color: #f5c518; font-size: 1.35rem; letter-spacing: 2px; margin-bottom: 6px; }
+    .hero-form-stars .stars-sources { font-size: 0.77rem; font-weight: 700; display: flex; justify-content: center; align-items: center; gap: 8px; }
+    .src-fb { color: #1877f2; } .src-g { color: #4285f4; } .src-y { color: #d32323; } .src-dot { color: #ccc; }
 
     @media (max-width: 860px) {
       .hero-split { grid-template-columns: 1fr; }
@@ -240,7 +244,8 @@
     .contact-form-wrap { }
     .contact-form-wrap h2 { font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; }
     .contact-form .form-row input,
-    .contact-form .form-row textarea { background: var(--gray); }
+    .contact-form .form-row textarea,
+    .contact-form .form-row select { background: var(--gray); }
     .contact-form .form-submit { background: var(--blue); }
     .contact-form .form-submit:hover { background: var(--blue-dark); }
 
@@ -307,6 +312,12 @@
         <img src="images/credible-3_25.png" alt="Top Rated Plumber" />
       </div>
       <div class="hero-form-card">
+        <div class="hero-form-stars">
+          <div class="stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="stars-sources">
+            <span class="src-fb">Facebook</span><span class="src-dot">·</span><span class="src-g">Google</span><span class="src-dot">·</span><span class="src-y">Yelp</span>
+          </div>
+        </div>
         <div class="hero-form-header">
           <h3>Get a Free Estimate</h3>
           <p>We respond within 1 business hour</p>
@@ -330,15 +341,16 @@
             </div>
             <div class="form-row">
               <label>Service Needed</label>
-              <div class="check-group">
-                <label class="check-item"><input type="checkbox" name="service" value="Drain Cleaning" /> Drain Cleaning</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Pipe Repair / Leak" /> Pipe Repair / Leak</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Water Heater" /> Water Heater</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Toilet Repair" /> Toilet Repair</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Faucet / Fixture" /> Faucet / Fixture</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Emergency Service" /> Emergency Service</label>
-                <label class="check-item"><input type="checkbox" name="service" value="Other" /> Other</label>
-              </div>
+              <select name="service">
+                <option value="">— Select a service —</option>
+                <option value="Drain Cleaning">Drain Cleaning</option>
+                <option value="Pipe Repair / Leak">Pipe Repair / Leak</option>
+                <option value="Water Heater">Water Heater</option>
+                <option value="Toilet Repair">Toilet Repair</option>
+                <option value="Faucet / Fixture">Faucet / Fixture</option>
+                <option value="Emergency Service">Emergency Service</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
             <div class="form-row">
               <label>Comment (optional)</label>
@@ -547,15 +559,16 @@
       </div>
       <div class="form-row">
         <label>Service Needed</label>
-        <div class="check-group">
-          <label class="check-item"><input type="checkbox" name="service" value="Drain Cleaning" /> Drain Cleaning</label>
-          <label class="check-item"><input type="checkbox" name="service" value="Pipe Repair / Leak" /> Pipe Repair / Leak</label>
-          <label class="check-item"><input type="checkbox" name="service" value="Water Heater" /> Water Heater</label>
-          <label class="check-item"><input type="checkbox" name="service" value="Toilet Repair" /> Toilet Repair</label>
-          <label class="check-item"><input type="checkbox" name="service" value="Faucet / Fixture" /> Faucet / Fixture</label>
-          <label class="check-item"><input type="checkbox" name="service" value="Emergency Service" /> Emergency Service</label>
-          <label class="check-item"><input type="checkbox" name="service" value="Other" /> Other</label>
-        </div>
+        <select name="service">
+          <option value="">— Select a service —</option>
+          <option value="Drain Cleaning">Drain Cleaning</option>
+          <option value="Pipe Repair / Leak">Pipe Repair / Leak</option>
+          <option value="Water Heater">Water Heater</option>
+          <option value="Toilet Repair">Toilet Repair</option>
+          <option value="Faucet / Fixture">Faucet / Fixture</option>
+          <option value="Emergency Service">Emergency Service</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
       <div class="form-row">
         <label>Comment (optional)</label>
