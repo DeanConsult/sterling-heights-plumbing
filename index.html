@@ -150,15 +150,8 @@
     .form-submit { width: 100%; background: var(--blue); color: var(--white); border: none; padding: 13px; border-radius: var(--radius); font-size: 0.97rem; font-weight: 700; cursor: pointer; transition: background .2s; margin-top: 6px; }
     .form-submit:hover { background: var(--blue-dark); }
     .form-note { font-size: 0.75rem; color: var(--muted); text-align: center; margin-top: 10px; }
-    .hero-form-stars { background: var(--white); padding: 18px 24px 14px; text-align: center; border-bottom: 1px solid #efefef; }
-    .hero-form-stars .stars-row { color: #f5c518; font-size: 1.6rem; letter-spacing: 3px; margin-bottom: 10px; }
-    .hero-form-stars .stars-sources { display: flex; justify-content: center; align-items: center; gap: 14px; }
-    .src-fb { font-size: 0.92rem; font-weight: 800; color: #1877f2; font-family: 'Segoe UI', sans-serif; letter-spacing: -0.01em; }
-    .src-fb::after { content: '.'; }
-    .src-g { font-size: 0.92rem; font-weight: 700; font-family: 'Product Sans', 'Segoe UI', sans-serif; }
-    .src-g .gl { color: #4285F4; } .src-g .go1 { color: #EA4335; } .src-g .go2 { color: #FBBC05; } .src-g .gg { color: #4285F4; } .src-g .gl2 { color: #34A853; } .src-g .ge { color: #EA4335; }
-    .src-y { font-size: 0.92rem; font-weight: 900; color: #d32323; font-family: 'Segoe UI', sans-serif; letter-spacing: -0.02em; }
-    .src-y .yelp-burst { font-size: 0.65rem; vertical-align: super; color: #d32323; }
+    .hero-form-credible { background: var(--white); padding: 16px 24px 14px; text-align: center; border-bottom: 1px solid #efefef; }
+    .hero-form-credible img { max-width: 200px; height: auto; }
 
     @media (max-width: 860px) {
       .hero-split { grid-template-columns: 1fr; }
@@ -313,17 +306,9 @@
       </div>
     </div>
     <div class="hero-form-panel">
-      <div class="hero-form-credible">
-        <img src="images/credible-3_25.png" alt="Top Rated Plumber" />
-      </div>
       <div class="hero-form-card">
-        <div class="hero-form-stars">
-          <div class="stars-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <div class="stars-sources">
-            <span class="src-fb">facebook</span>
-            <span class="src-g"><span class="gl">G</span><span class="go1">o</span><span class="go2">o</span><span class="gg">g</span><span class="gl2">l</span><span class="ge">e</span></span>
-            <span class="src-y">yelp<span class="yelp-burst">&#10033;</span></span>
-          </div>
+        <div class="hero-form-credible">
+          <img src="images/credible-3_25.png" alt="Top Rated Plumber" />
         </div>
         <div class="hero-form-header">
           <h3>Get a Free Estimate</h3>
