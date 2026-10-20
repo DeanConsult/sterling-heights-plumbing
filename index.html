@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -33,6 +33,7 @@
     "name": "Sterling Heights Plumbing",
     "url": "https://www.sheightsplumbing.com",
     "telephone": "+15864967237",
+    "image": ["https://www.sheightsplumbing.com/images/istockphoto-1412399528-612x612.jpg"],
     "email": "sheightswplumbing@gmail.com",
     "address": {
       "@type": "PostalAddress",
@@ -45,7 +46,9 @@
     "description": "Residential and commercial plumbing repair and installation in Sterling Heights MI and Metro Detroit. 25+ years experience. 24-hour emergency service.",
     "areaServed": ["Sterling Heights MI", "Metro Detroit", "Macomb County", "Warren", "Troy", "Utica", "Shelby Township"],
     "priceRange": "$$",
-    "openingHours": "Mo-Su 00:00-24:00",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+    ],
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": "42.5803",
